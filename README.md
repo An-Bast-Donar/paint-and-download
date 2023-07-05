@@ -1,2 +1,5 @@
 # paint-and-download
- Pinta y descarga diferentes imagens
+
+Pinta y descarga diferentes imagens
+
+ESTE PROYECTO TE PERMITE PINTAR EN UN CANVAS POR MEDIO DE CODIGO Y DESCARGAR LO PINTADO EN EL CANVAS EN UN ARCHIVO DE IMAGEN
