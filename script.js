@@ -4,6 +4,7 @@ canvas.width = 512;
 canvas.height = 512;
 // Aquí es donde puedes empezar a dibujar tu imagen utilizando métodos de canvas
 
+/*
 // Dibujar un cuadrado con esquinas redondeadas
 const cornerRadius = 120; // radio de las esquinas redondeadas
 ctx.beginPath();
@@ -21,13 +22,16 @@ gradient.addColorStop(1, 'lightgray'); // color en la parte inferior
 
 ctx.fillStyle = gradient;
 ctx.fill();
+*/
 
 // Dibujar un aro en el medio
-const circleRadius = 190; // radio del aro
+const circleRadius = 225; // radio del aro
 ctx.beginPath();
 ctx.arc(canvas.width / 2, canvas.height / 2, circleRadius, 0, 2 * Math.PI, false);
 ctx.lineWidth = 37.5; // ancho del aro
 ctx.strokeStyle = 'gray'; // color del aro
+ctx.fillStyle = '#f2f2f2'; // color de relleno del aro
+ctx.fill(); // rellenar el aro
 ctx.lineCap = 'round'; // redondear los extremos de las líneas
 ctx.stroke();
 
@@ -44,12 +48,13 @@ ctx.shadowOffsetY = 0; // desplazamiento vertical del sombreado
 ctx.stroke();
 
 // Agregar texto en el medio del aro
-ctx.font = 'bold 140px Poppins'; // tamaño y tipo de letra
+ctx.font = 'bold 195px Poppins'; // tamaño y tipo de letra
 ctx.fillStyle = 'white'; // color del texto
 ctx.textAlign = 'center'; // alineación horizontal del texto
 ctx.textBaseline = 'middle'; // alineación vertical del texto
 ctx.fillText('0:14', canvas.width / 2, canvas.height / 2); // texto y posición
 
+/*
 // Cargar la imagen
 let img = new Image();
 img.src = 'images/timer.png'; // reemplaza esto con la ruta a tu imagen
@@ -70,6 +75,7 @@ img.onload = function() {
   // Restaurar el estado del contexto del canvas
   ctx.restore();
 };
+*/
 
 
 // Descargar la imagen
