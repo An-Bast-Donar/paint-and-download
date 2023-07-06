@@ -5,7 +5,7 @@ canvas.height = 512;
 // Aquí es donde puedes empezar a dibujar tu imagen utilizando métodos de canvas
 
 // Dibujar un cuadrado con esquinas redondeadas
-const cornerRadius = 100; // radio de las esquinas redondeadas
+const cornerRadius = 120; // radio de las esquinas redondeadas
 ctx.beginPath();
 ctx.moveTo(cornerRadius, 0);
 ctx.arcTo(canvas.width, 0, canvas.width, canvas.height, cornerRadius);
@@ -23,10 +23,10 @@ ctx.fillStyle = gradient;
 ctx.fill();
 
 // Dibujar un aro en el medio
-const circleRadius = 180; // radio del aro
+const circleRadius = 190; // radio del aro
 ctx.beginPath();
 ctx.arc(canvas.width / 2, canvas.height / 2, circleRadius, 0, 2 * Math.PI, false);
-ctx.lineWidth = 30; // ancho del aro
+ctx.lineWidth = 37.5; // ancho del aro
 ctx.strokeStyle = 'gray'; // color del aro
 ctx.lineCap = 'round'; // redondear los extremos de las líneas
 ctx.stroke();
@@ -44,7 +44,7 @@ ctx.shadowOffsetY = 0; // desplazamiento vertical del sombreado
 ctx.stroke();
 
 // Agregar texto en el medio del aro
-ctx.font = 'bold 130px Poppins'; // tamaño y tipo de letra
+ctx.font = 'bold 140px Poppins'; // tamaño y tipo de letra
 ctx.fillStyle = 'white'; // color del texto
 ctx.textAlign = 'center'; // alineación horizontal del texto
 ctx.textBaseline = 'middle'; // alineación vertical del texto
@@ -61,8 +61,8 @@ img.onload = function() {
   ctx.shadowColor = 'transparent';
 
   // Dibujar la imagen en la esquina inferior derecha del canvas
-  let imgWidth = 110; // puedes ajustar esto para cambiar el tamaño de la imagen
-  let imgHeight = 150; // puedes ajustar esto para cambiar el tamaño de la imagen
+  let imgWidth = 120; // puedes ajustar esto para cambiar el tamaño de la imagen
+  let imgHeight = 170; // puedes ajustar esto para cambiar el tamaño de la imagen
   let x = 305;
   let y = 315;
   ctx.drawImage(img, x, y, imgWidth, imgHeight);
