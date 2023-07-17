@@ -49,7 +49,7 @@ ctx.stroke();
 
 // Agregar texto en el medio del aro
 ctx.font = 'bold 195px Poppins'; // tamaño y tipo de letra
-ctx.fillStyle = 'white'; // color del texto
+ctx.fillStyle = 'red'; // color del texto
 ctx.textAlign = 'center'; // alineación horizontal del texto
 ctx.textBaseline = 'middle'; // alineación vertical del texto
 ctx.fillText('0:14', canvas.width / 2, canvas.height / 2); // texto y posición
